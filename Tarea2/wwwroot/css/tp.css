@@ -1,0 +1,72 @@
+﻿
+.div-Numero{
+
+    border-style: solid;
+}
+
+
+body {
+    background-color: #fef5e7;
+}
+
+.Azul {
+    background-color: #445c82;
+}
+
+    .Azul:hover {
+        background-color: #6e7a8e;
+    }
+
+.Azul2 {
+    background-color: #17bbfe;
+}
+
+    .Azul2:hover {
+        background-color: #6e7a8e;
+    }
+
+.Morado {
+    background-color: #e23df0;
+}
+
+    .Morado:hover {
+        background-color: #d995df;
+    }
+
+.limon {
+    background-color: #99e852;
+}
+
+    .limon:hover {
+        background-color: #afdb88;
+    }
+
+.MarronClaro {
+    background-color: #eca435;
+}
+
+    .MarronClaro:hover {
+        background-color: #cdb38c;
+    }
+
+.Hidrogeno {
+    background-color: #44824d;
+}
+
+.Amarrillo {
+    background-color: yellow;
+}
+
+    .Amarrillo:hover {
+        background-color: white;
+    }
+
+.Naranja {
+    background-color: #ec3748;
+}
+
+    .Naranja:hover {
+        background-color: #938492;
+    }
+
+

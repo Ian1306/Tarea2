@@ -1,0 +1,167 @@
+﻿
+@{
+    ViewData["Title"] = "Periodica";
+}
+
+<html>
+<head>
+    <title></title>
+
+    <link href="~/css/tp.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    @for(int i = 1; i <=12; i++)
+    {
+        @for (int j = 1; j <= 12; j++)
+        {
+              <div class="div-Numero"> @(i*j)  </div>
+
+
+
+        }
+    }
+
+    @*@foreach (var str in ViewBag.ArrayTabla)
+    {
+        @Html.Raw(str); <br />
+    }
+    @Html.Raw(ViewBag.ArrayTabla[1])*@
+
+    
+  
+
+
+    @*<div class="row">
+
+        <div>
+
+            <table border="2">
+                <tr>
+                    <td class="Hidrogeno">H<br>Hidrogeno</td>
+                    <td colspan="16"></td>
+                    <td class="Azul2">He<br>Hilio</td>
+                </tr>
+                <tr>
+                    <td class="Naranja">H<br>Hidrogeno</td>
+                    <td class="Amarrillo">H<br>Hidrogeno</td>
+                    <td colspan="10"></td>
+                    <td class="Morado">H<br>Hidrogeno</td>
+                    <td class="limon">H<br>Hidrogeno</td>
+                    <td class="MarronClaro">H<br>Hidrogeno</td>
+                    <td class="MarronClaro">H<br>Hidrogeno</td>
+                    <td class="MarronClaro">H<br>Hidrogeno</td>
+                    <td class="Azul2">H<br>Hidrogeno</td>
+                </tr>
+                <tr>
+                    <td class="Naranja">H<br>Hidrogeno</td>
+                    <td class="Amarrillo">H<br>Hidrogeno</td>
+                    <td colspan="10"></td>
+                    <td class="Morado">H<br>Hidrogeno</td>
+                    <td class="limon">H<br>Hidrogeno</td>
+                    <td class="MarronClaro">H<br>Hidrogeno</td>
+                    <td class="MarronClaro">H<br>Hidrogeno</td>
+                    <td class="MarronClaro">H<br>Hidrogeno</td>
+                    <td class="Azul2">H<br>Hidrogeno</td>
+                </tr>
+                <tr>
+                    <td class="Naranja">H<br>Hidrogeno</td>
+                    <td class="Amarrillo">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Morado">H<br>Hidrogeno</td>
+                    <td class="limon">H<br>Hidrogeno</td>
+                    <td class="MarronClaro">H<br>Hidrogeno</td>
+                    <td class="MarronClaro">H<br>Hidrogeno</td>
+                    <td class="MarronClaro">H<br>Hidrogeno</td>
+                    <td class="Azul2">H<br>Hi</td>
+                </tr>
+                <tr>
+                    <td class="Naranja">H<br>Hidrogeno</td>
+                    <td class="Amarrillo">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Morado">H<br>Hidrogeno</td>
+                    <td class="limon">H<br>Hidrogeno</td>
+                    <td class="MarronClaro">H<br>Hidrogeno</td>
+                    <td class="MarronClaro">H<br>Hidrogeno</td>
+                    <td class="MarronClaro">H<br>Hidrogeno</td>
+                    <td class="Azul2">H<br>Hidrogeno</td>
+                </tr>
+                <tr>
+                    <td class="Naranja">H<br>Hidrogeno</td>
+                    <td class="Amarrillo">H<br>Hidrogeno</td>
+                    <td class="MarronClaro">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Morado">H<br>Hidrogeno</td>
+                    <td class="limon">H<br>Hidrogeno</td>
+                    <td class="MarronClaro">H<br>Hidrogeno</td>
+                    <td class="MarronClaro">H<br>Hidrogeno</td>
+                    <td class="MarronClaro">H<br>Hidrogeno</td>
+                    <td class="Azul2">H<br>Hidrogeno</td>
+                </tr>
+                <tr>
+                    <td class="Naranja">H<br>Hidrogeno</td>
+                    <td class="Amarrillo">H<br>Hidrogeno</td>
+                    <td class="MarronClaro">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Azul">H<br>Hidrogeno</td>
+                    <td class="Morado">H<br>Hidrogeno</td>
+                    <td class="limon">H<br>Hidrogeno</td>
+                    <td class="MarronClaro">H<br>Hidrogeno</td>
+                    <td class="MarronClaro">H<br>Hidrogeno</td>
+                    <td class="MarronClaro">H<br>Hidrogeno</td>
+                    <td class="Azul2">H<br>Hidrogeno</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+
+    </div>*@
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
