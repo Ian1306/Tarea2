@@ -12,138 +12,119 @@
 </head>
 <body>
 
-    @for(int i = 1; i <=12; i++)
-    {
-        @for (int j = 1; j <= 12; j++)
-        {
-              <div class="div-Numero"> @(i*j)  </div>
 
 
-
-        }
-    }
-
-    @*@foreach (var str in ViewBag.ArrayTabla)
-    {
-        @Html.Raw(str); <br />
-    }
-    @Html.Raw(ViewBag.ArrayTabla[1])*@
-
-    
-  
-
-
-    @*<div class="row">
+    <div class="row">
 
         <div>
 
             <table border="2">
                 <tr>
-                    <td class="Hidrogeno">H<br>Hidrogeno</td>
+                    <td class="Hidrogeno">@ViewBag.ArrayTabla[1]</td>
                     <td colspan="16"></td>
-                    <td class="Azul2">He<br>Hilio</td>
+                    <td class="Azul2">@ViewBag.ArrayTabla[78]</td>
                 </tr>
                 <tr>
-                    <td class="Naranja">H<br>Hidrogeno</td>
-                    <td class="Amarrillo">H<br>Hidrogeno</td>
+                    <td class="Naranja">@ViewBag.ArrayTabla[2]</td>
+                    <td class="Amarrillo">@ViewBag.ArrayTabla[3]</td>
                     <td colspan="10"></td>
-                    <td class="Morado">H<br>Hidrogeno</td>
-                    <td class="limon">H<br>Hidrogeno</td>
-                    <td class="MarronClaro">H<br>Hidrogeno</td>
-                    <td class="MarronClaro">H<br>Hidrogeno</td>
-                    <td class="MarronClaro">H<br>Hidrogeno</td>
-                    <td class="Azul2">H<br>Hidrogeno</td>
+                    <td class="Morado">@ViewBag.ArrayTabla[79]</td>
+                    <td class="limon">@ViewBag.ArrayTabla[81]</td>
+                    <td class="MarronClaro">@ViewBag.ArrayTabla[83]</td>
+                    <td class="MarronClaro">@ViewBag.ArrayTabla[85]</td>
+                    <td class="MarronClaro">@ViewBag.ArrayTabla[87]</td>
+                    <td class="Azul2">@ViewBag.ArrayTabla[89]</td>
                 </tr>
                 <tr>
-                    <td class="Naranja">H<br>Hidrogeno</td>
-                    <td class="Amarrillo">H<br>Hidrogeno</td>
+                    <td class="Naranja">@ViewBag.ArrayTabla[4]</td>
+                    <td class="Amarrillo">@ViewBag.ArrayTabla[5]</td>
                     <td colspan="10"></td>
-                    <td class="Morado">H<br>Hidrogeno</td>
-                    <td class="limon">H<br>Hidrogeno</td>
-                    <td class="MarronClaro">H<br>Hidrogeno</td>
-                    <td class="MarronClaro">H<br>Hidrogeno</td>
-                    <td class="MarronClaro">H<br>Hidrogeno</td>
-                    <td class="Azul2">H<br>Hidrogeno</td>
+                    <td class="Morado">@ViewBag.ArrayTabla[80]</td>
+                    <td class="limon">@ViewBag.ArrayTabla[82]</td>
+                    <td class="MarronClaro">@ViewBag.ArrayTabla[84]</td>
+                    <td class="MarronClaro">@ViewBag.ArrayTabla[86]</td>
+                    <td class="MarronClaro">@ViewBag.ArrayTabla[88]</td>
+                    <td class="Azul2">@ViewBag.ArrayTabla[90]</td>
                 </tr>
                 <tr>
-                    <td class="Naranja">H<br>Hidrogeno</td>
-                    <td class="Amarrillo">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Morado">H<br>Hidrogeno</td>
-                    <td class="limon">H<br>Hidrogeno</td>
-                    <td class="MarronClaro">H<br>Hidrogeno</td>
-                    <td class="MarronClaro">H<br>Hidrogeno</td>
-                    <td class="MarronClaro">H<br>Hidrogeno</td>
-                    <td class="Azul2">H<br>Hi</td>
+                    <td class="Naranja">@ViewBag.ArrayTabla[6]</td>
+                    <td class="Amarrillo">@ViewBag.ArrayTabla[7]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[14]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[18]</td>
+                    <td class="Azul">>@ViewBag.ArrayTabla[22]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[26]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[30]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[34]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[38]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[42]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[46]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[50]</td>
+                    <td class="Morado">@ViewBag.ArrayTabla[54]</td>
+                    <td class="limon">@ViewBag.ArrayTabla[58]</td>
+                    <td class="MarronClaro">@ViewBag.ArrayTabla[62]</td>
+                    <td class="MarronClaro">@ViewBag.ArrayTabla[66]</td>
+                    <td class="MarronClaro">@ViewBag.ArrayTabla[70]</td>
+                    <td class="Azul2">H<br>@ViewBag.ArrayTabla[74]</td>
                 </tr>
                 <tr>
-                    <td class="Naranja">H<br>Hidrogeno</td>
-                    <td class="Amarrillo">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Morado">H<br>Hidrogeno</td>
-                    <td class="limon">H<br>Hidrogeno</td>
-                    <td class="MarronClaro">H<br>Hidrogeno</td>
-                    <td class="MarronClaro">H<br>Hidrogeno</td>
-                    <td class="MarronClaro">H<br>Hidrogeno</td>
-                    <td class="Azul2">H<br>Hidrogeno</td>
+                    <td class="Naranja">@ViewBag.ArrayTabla[8]</td>
+                    <td class="Amarrillo">@ViewBag.ArrayTabla[9]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[15]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[19]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[23]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[27]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[31]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[35]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[39]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[43]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[47]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[51]</td>
+                    <td class="Morado">@ViewBag.ArrayTabla[55]</td>
+                    <td class="limon">@ViewBag.ArrayTabla[59]</td>
+                    <td class="MarronClaro">@ViewBag.ArrayTabla[63]</td>
+                    <td class="MarronClaro">@ViewBag.ArrayTabla[67]</td>
+                    <td class="MarronClaro">@ViewBag.ArrayTabla[71]</td>
+                    <td class="Azul2">@ViewBag.ArrayTabla[75]</td>
                 </tr>
                 <tr>
-                    <td class="Naranja">H<br>Hidrogeno</td>
-                    <td class="Amarrillo">H<br>Hidrogeno</td>
-                    <td class="MarronClaro">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Morado">H<br>Hidrogeno</td>
-                    <td class="limon">H<br>Hidrogeno</td>
-                    <td class="MarronClaro">H<br>Hidrogeno</td>
-                    <td class="MarronClaro">H<br>Hidrogeno</td>
-                    <td class="MarronClaro">H<br>Hidrogeno</td>
-                    <td class="Azul2">H<br>Hidrogeno</td>
+                    <td class="Naranja">@ViewBag.ArrayTabla[10]</td>
+                    <td class="Amarrillo">@ViewBag.ArrayTabla[11]</td>
+                    <td class="MarronClaro">@ViewBag.ArrayTabla[16]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[20]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[24]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[28]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[32]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[36]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[40]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[44]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[48]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[52]</td>
+                    <td class="Morado">@ViewBag.ArrayTabla[56]</td>
+                    <td class="limon">@ViewBag.ArrayTabla[60]</td>
+                    <td class="MarronClaro">@ViewBag.ArrayTabla[64]</td>
+                    <td class="MarronClaro">@ViewBag.ArrayTabla[68]</td>
+                    <td class="MarronClaro">@ViewBag.ArrayTabla[72]</td>
+                    <td class="Azul2">@ViewBag.ArrayTabla[76]</td>
                 </tr>
                 <tr>
-                    <td class="Naranja">H<br>Hidrogeno</td>
-                    <td class="Amarrillo">H<br>Hidrogeno</td>
-                    <td class="MarronClaro">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Azul">H<br>Hidrogeno</td>
-                    <td class="Morado">H<br>Hidrogeno</td>
-                    <td class="limon">H<br>Hidrogeno</td>
-                    <td class="MarronClaro">H<br>Hidrogeno</td>
-                    <td class="MarronClaro">H<br>Hidrogeno</td>
-                    <td class="MarronClaro">H<br>Hidrogeno</td>
-                    <td class="Azul2">H<br>Hidrogeno</td>
+                    <td class="Naranja">@ViewBag.ArrayTabla[12]</td>
+                    <td class="Amarrillo">@ViewBag.ArrayTabla[13]</td>
+                    <td class="MarronClaro">@ViewBag.ArrayTabla[17]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[21]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[25]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[29]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[33]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[37]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[41]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[45]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[49]</td>
+                    <td class="Azul">@ViewBag.ArrayTabla[53]</td>
+                    <td class="Morado">@ViewBag.ArrayTabla[57]</td>
+                    <td class="limon">@ViewBag.ArrayTabla[61]</td>
+                    <td class="MarronClaro">@ViewBag.ArrayTabla[65]</td>
+                    <td class="MarronClaro">@ViewBag.ArrayTabla[69]</td>
+                    <td class="MarronClaro">@ViewBag.ArrayTabla[73]</td>
+                    <td class="Azul2">@ViewBag.ArrayTabla[77]</td>
                 </tr>
 
             </table>
@@ -151,7 +132,7 @@
         </div>
 
 
-    </div>*@
+    </div>
 
 
 
